@@ -11,20 +11,20 @@ stage('code checkout'){
 
 stage('build'){
 
-    sh "maven/bin/mvn clean package"
+    sh "${maven}/bin/mvn clean package"
 }
-/*
+
 stage('execute sonarqube report'){
 
-    sh "mvn clean sonar:sonar"
+    sh "${maven}/bin/mvn clean sonar:sonar"
 
 }
 
 stage('upload to nexus'){
 
-    sh "mvn clean deploy"
+    sh "${maven}/bin/mvn clean deploy"
 }
-
+/*
 stage('upload to container'){
 
     deploy adapters: [tomcat9(credentialsId: '5c3ed0ed-afdc-4f4b-aa26-2831ae2e05d7', path: '', url: 'http://65.0.125.250:8080/')], contextPath: null, war: 'target/maven-web-application.war'
