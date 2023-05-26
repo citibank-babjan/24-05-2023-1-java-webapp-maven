@@ -7,7 +7,7 @@
 	<packaging>war</packaging>
 	<version>1.2.34-SNAPSHOT</version>
 	
-	<name>maven-web-application</name>
+	<name>maven-web-appln</name>
 
 	<description>Maven Web Project for Java Programming Language</description>
 
