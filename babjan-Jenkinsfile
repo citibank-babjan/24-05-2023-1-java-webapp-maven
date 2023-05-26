@@ -24,11 +24,11 @@ stage('upload to nexus'){
 
     sh "${maven}/bin/mvn clean deploy"
 }
-/*
+
 stage('upload to container'){
 
     deploy adapters: [tomcat9(credentialsId: '5c3ed0ed-afdc-4f4b-aa26-2831ae2e05d7', path: '', url: 'http://65.0.125.250:8080/')], contextPath: null, war: 'target/maven-web-application.war'
 }
-*/
+
 
 }
