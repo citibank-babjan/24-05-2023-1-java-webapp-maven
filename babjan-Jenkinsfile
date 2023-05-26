@@ -1,6 +1,6 @@
 node {
 
-echo branchName = env.${BRANCH_NAME}
+
 
 def maven = tool name: "maven-3.9.2"
 
