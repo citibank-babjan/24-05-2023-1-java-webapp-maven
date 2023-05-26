@@ -1,8 +1,8 @@
 node {
 
-echo env.BRANCH_NAME
+echo branchName = env.${BRANCH_NAME}
 
-def maven = tool name: "maven-3.9.6"
+def maven = tool name: "maven-3.9.2"
 
 stage('code checkout'){
 
