@@ -11,7 +11,7 @@ stage('code checkout'){
 
 stage('build'){
 
-    sh "maven/bin/mvn clean package"
+    sh "${maven}/bin/mvn clean package"
 }
 /*
 stage('execute sonarqube report'){
